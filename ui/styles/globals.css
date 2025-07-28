@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url("/fonts/rubik.woff2") format("woff2-variations");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.art-video-player {
+  --art-control-height: 60px;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+@media (pointer: coarse) {
+  *::-webkit-scrollbar {
+    display: none;
+  }
+
+  * {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
